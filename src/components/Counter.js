@@ -1,29 +1,29 @@
-// import React, {Component} from "react";
+import React, { Component } from 'react'
 
-// class Counter extends Component{
+export class Counter extends Component {
 
-//     constructor(props){
-//         super(props)
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             count : 0
+        }
+    }
+    
+   increment(){
+       this.setState ({
+        count : this.state.count + 1
+       })
+   }
 
-//         this.state = {
-//             count : 0
-//             }
-//     }
+    render() {
+        return (
+            <div>
+               <h1>Count - {this.state.count}</h1>
+                <button onClick={() =>this.increment()}>Increment</button>
+            </div>
+        )
+    }
+}
 
-//     increment(){
-//         this.setState({
-//             count : count +1
-//         })
-//     }
-
-//     render(){
-//         return (
-//             <div>
-//             <div>Count - {this.state.count}</div>
-//             <button onClick={ () => this.increment()}>Increment</button>
-//             </div>
-//         )
-//     }
-// }
-
-// export default Counter
+export default Counter

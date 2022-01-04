@@ -9,8 +9,8 @@ class App extends Component{
   render(){
     return(
       <div className='App'>
-        {/* <Counter/> */}
-        <Message/>
+        <Counter/>
+        {/* <Message/> */}
         {/* <Greet name='Rahul'/>
         <Greet name='Chirag'/> */}
       </div>
