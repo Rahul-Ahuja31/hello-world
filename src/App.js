@@ -11,8 +11,8 @@ class App extends Component{
       <div className='App'>
         {/* <Counter/> */}
         <Message/>
-        <Greet name='Rahul'/>
-        <Greet name='Chirag'/>
+        {/* <Greet name='Rahul'/>
+        <Greet name='Chirag'/> */}
       </div>
     );
   }
