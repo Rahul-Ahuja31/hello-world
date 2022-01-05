@@ -1,8 +1,9 @@
 import React from "react";
 
 function Greet (props){
+    const{name,surname}=props
     return( 
-    <h1>Hello {props.name} </h1>
+     <h1>Hello {name} {surname} </h1>
     )
 }
 
